@@ -1,0 +1,25 @@
+"use client";
+
+import { Text } from "@mantine/core";
+
+export const ScoreTeam = ({
+  scoreTime,
+  setScoreTime,
+  audioTeam,
+  setAnimate,
+}) => {
+  return (
+    <Text
+      style={{ pointerEvents: "all", userSelect: "all" }}
+      fw={700}
+      fz={"15vw"}
+      onClick={() => {
+        setScoreTime(scoreTime < 30 ? scoreTime + 1 : scoreTime);
+        scoreTime !== 30 && audioTeam.play();
+        setAnimate(true);
+      }}
+    >
+      {scoreTime.toString().padStart(2, "0")}
+    </Text>
+  );
+};
