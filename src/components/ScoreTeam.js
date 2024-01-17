@@ -10,6 +10,7 @@ export const ScoreTeam = ({
 }) => {
   return (
     <Text
+      c="#000"
       style={{ pointerEvents: "all", userSelect: "all" }}
       fw={700}
       fz={"15vw"}

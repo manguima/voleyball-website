@@ -68,7 +68,7 @@ export const ScoreBoard = () => {
           }}
         >
           <Center w={"100%"} h={"100%"}>
-            <Text fw={600} fz={"15vw"}>
+            <Text c="#000" fw={600} fz={"15vw"}>
               <ScoreTeam
                 scoreTime={scoreTimeB}
                 setScoreTime={setScoreTimeB}
@@ -90,7 +90,7 @@ export const ScoreBoard = () => {
           }}
         >
           <Center w={"100%"} h={"100%"}>
-            <Text fw={600} fz={"4vw"}>
+            <Text c="#000" fw={600} fz={"4vw"}>
               Time A
             </Text>
           </Center>
@@ -105,7 +105,7 @@ export const ScoreBoard = () => {
           }}
         >
           <Center w={"100%"} h={"100%"}>
-            <Text fw={600} fz={"4vw"}>
+            <Text c="#000" fw={600} fz={"4vw"}>
               Time B
             </Text>
           </Center>
@@ -120,7 +120,7 @@ export const ScoreBoard = () => {
           }}
         >
           <Center w={"100%"} h={"100%"}>
-            <Text c={"#fff"} fw={800} fz={"4vw"}>
+            <Text c="#000" c={"#fff"} fw={800} fz={"4vw"}>
               X
             </Text>
           </Center>
@@ -137,6 +137,7 @@ export const ScoreBoard = () => {
         >
           <Center w={"100%"} h={"100%"}>
             <Text
+              c="#000"
               onClick={() => {
                 setScoreTimeA(0);
                 setScoreTimeB(0);

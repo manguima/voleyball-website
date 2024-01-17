@@ -39,6 +39,7 @@ export const TeamWinComponent = () => {
       <Center w={"100%"} h={"100%"}>
         <Flex direction={"column"} justify={"center"} align={"center"}>
           <Text
+            c="#000"
             style={{ pointerEvents: "none", userSelect: "none" }}
             lh={"14vw"}
             c={"#fff"}
