@@ -24,6 +24,9 @@ export const ScoreBtnTeam = ({
           setScoreTime(scoreTime < 30 ? scoreTime + 1 : scoreTime);
           scoreTime !== 30 && audioTeam.play();
           setAnimate(true);
+          setTimeout(() => {
+            setAnimate(false);
+          }, 4000);
         }}
         color="#fff"
         c={"#2F2BA3"}

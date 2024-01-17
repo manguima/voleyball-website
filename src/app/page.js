@@ -31,11 +31,6 @@ export default function Home() {
     if (scoreTimeA === 30) setTeamWin("A");
     if (scoreTimeB === 30) setTeamWin("B");
 
-    setTimeout(() => {
-      setAnimateA(false);
-      setAnimateB(false);
-    }, 4000);
-
     // if (!!teamWin) win.play();
   }, [scoreTimeA, scoreTimeB]);
 
