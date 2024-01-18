@@ -1,5 +1,4 @@
 "use client";
-
 import { useScoreContext } from "@/app/page";
 import { ActionIcon, Box, Center, Image } from "@mantine/core";
 import { IconMoodHappy } from "@tabler/icons-react";

@@ -120,7 +120,7 @@ export const ScoreBoard = () => {
           }}
         >
           <Center w={"100%"} h={"100%"}>
-            <Text c="#000" c={"#fff"} fw={800} fz={"4vw"}>
+            <Text c="#000" fw={800} fz={"4vw"}>
               X
             </Text>
           </Center>
@@ -143,7 +143,6 @@ export const ScoreBoard = () => {
                 setScoreTimeB(0);
               }}
               style={{ cursor: "pointer" }}
-              c={"#000"}
               fw={800}
               fz={"2vw"}
             >

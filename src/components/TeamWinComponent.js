@@ -40,7 +40,6 @@ export const TeamWinComponent = () => {
             c="#000"
             style={{ pointerEvents: "none", userSelect: "none" }}
             lh={"14vw"}
-            c={"#fff"}
             fw={"700"}
             fz={"14vw"}
           >
