@@ -38,7 +38,7 @@ export const MemeComponent = () => {
         style={{
           position: "absolute",
           bottom: "0",
-          left: "calc(100% - 32vw)",
+          left: "0",
         }}
       >
         <AnimatePresence>

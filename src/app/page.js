@@ -56,9 +56,7 @@ export default function Home() {
       }}
     >
       <Container p={0} fluid w={"100%"} style={{ contain: "paint" }}>
-        <Flex style={{ transform: "scale(1.2)" }}>
-          {!!teamWin ? <TeamWinComponent /> : <ScoreBoard />}
-        </Flex>
+        <Flex>{!!teamWin ? <TeamWinComponent /> : <ScoreBoard />}</Flex>
       </Container>
     </ScoreContext.Provider>
   );
