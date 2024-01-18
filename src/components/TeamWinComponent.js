@@ -1,5 +1,3 @@
-"use client";
-
 import { useScoreContext } from "@/app/page";
 import {
   Badge,
