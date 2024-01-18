@@ -120,7 +120,7 @@ export const ScoreBoard = () => {
           }}
         >
           <Center w={"100%"} h={"100%"}>
-            <Text c="#000" fw={800} fz={"4vw"}>
+            <Text c="#ffffff" fw={800} fz={"4vw"}>
               X
             </Text>
           </Center>
