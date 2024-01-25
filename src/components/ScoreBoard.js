@@ -6,7 +6,6 @@ import { ScoreBtnTeam } from "./ScoreBtnTeam";
 import { ScoreTeam } from "./ScoreTeam";
 import { Box, Center, Image, Text, Container } from "@mantine/core";
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect } from "react";
 
 export const ScoreBoard = () => {
   const {

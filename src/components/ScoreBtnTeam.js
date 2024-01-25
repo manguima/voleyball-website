@@ -30,21 +30,19 @@ export const ScoreBtnTeam = ({
             setAnimate(true);
           }
         }}
-        color="#fff"
-        c={"#2F2BA3"}
+        style={{ background: "#fff" }}
         size={"4vw"}
       >
-        <IconCaretUpFilled size={"4vw"} />
+        <IconCaretUpFilled size={"4vw"} style={{ color: "#2F2BA3" }} />
       </ActionIcon>
       <ActionIcon
         onClick={() => {
           setScoreTime(scoreTime > 0 ? scoreTime - 1 : scoreTime);
         }}
-        color="#fff"
-        c={"#2F2BA3"}
+        style={{ background: "#fff" }}
         size={"4vw"}
       >
-        <IconCaretDownFilled size={"4vw"} />
+        <IconCaretDownFilled size={"4vw"} style={{ color: "#2F2BA3" }} />
       </ActionIcon>
     </Flex>
   );
