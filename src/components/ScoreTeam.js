@@ -19,9 +19,6 @@ export const ScoreTeam = ({
         setScoreTime(scoreTime < 30 ? scoreTime + 1 : scoreTime);
         scoreTime !== 30 && audioTeam.play();
         setAnimate(true);
-        setTimeout(() => {
-          setAnimate(false);
-        }, 4000);
       }}
     >
       {scoreTime?.toString().padStart(2, "0")}

@@ -203,8 +203,10 @@ export const ScoreBoard = () => {
             <AnimatePresence>
               {animateA && (
                 <motion.div
-                  onLayoutAnimationComplete={() => {
-                    setAnimateA(false);
+                  onAnimationComplete={() => {
+                    setTimeout(() => {
+                      setAnimateA(false);
+                    }, 5000);
                   }}
                   style={{ opacity: 0 }}
                   initial={{ opacity: 0, transform: "translateX(5vw)" }}
@@ -231,8 +233,10 @@ export const ScoreBoard = () => {
             <AnimatePresence>
               {animateB && (
                 <motion.div
-                  onLayoutAnimationComplete={() => {
-                    setAnimateB(false);
+                  onAnimationComplete={() => {
+                    setTimeout(() => {
+                      setAnimateB(false);
+                    }, 5000);
                   }}
                   style={{ opacity: 0 }}
                   initial={{ opacity: 0, transform: "translateX(5vw)" }}
