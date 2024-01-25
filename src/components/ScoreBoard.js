@@ -25,7 +25,7 @@ export const ScoreBoard = () => {
     <Container
       fluid
       w={"100%"}
-      h={"100dvh"}
+      h={"100svh"}
       p={0}
       style={{
         pointerEvents: "none",
@@ -68,14 +68,12 @@ export const ScoreBoard = () => {
           }}
         >
           <Center w={"100%"} h={"100%"}>
-            <Text c="#000" fw={600} fz={"15vw"}>
-              <ScoreTeam
-                scoreTime={scoreTimeB}
-                setScoreTime={setScoreTimeB}
-                audioTeam={audioTeamB}
-                setAnimate={setAnimateB}
-              />
-            </Text>
+            <ScoreTeam
+              scoreTime={scoreTimeB}
+              setScoreTime={setScoreTimeB}
+              audioTeam={audioTeamB}
+              setAnimate={setAnimateB}
+            />
           </Center>
         </Box>
 
@@ -166,6 +164,7 @@ export const ScoreBoard = () => {
               setScoreTime={setScoreTimeA}
               audioTeam={audioTeamA}
               setAnimate={setAnimateA}
+              animate={animateA}
             />
           </Center>
         </Box>
@@ -185,6 +184,7 @@ export const ScoreBoard = () => {
               setScoreTime={setScoreTimeB}
               audioTeam={audioTeamB}
               setAnimate={setAnimateB}
+              animate={animateB}
             />
           </Center>
         </Box>
@@ -239,6 +239,19 @@ export const ScoreBoard = () => {
           </Center>
         </Box>
         <MemeComponent />
+        <Text
+          w={"22vw"}
+          ml={"1.5vw"}
+          fz={"4vw"}
+          fw={900}
+          mt={"8vw"}
+          ta={"center"}
+          lh={"4vw"}
+          style={{ position: "absolute" }}
+          c={"#fff"}
+        >
+          Serra Dourada 2 <br /> <b style={{ color: "#ffd900" }}>Oficial</b>
+        </Text>
       </Center>
     </Container>
   );

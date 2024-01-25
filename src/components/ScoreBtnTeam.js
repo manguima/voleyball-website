@@ -3,12 +3,14 @@
 import { ActionIcon, Flex } from "@mantine/core";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 import { IconCaretUpFilled } from "@tabler/icons-react";
+import { animate } from "framer-motion";
 
 export const ScoreBtnTeam = ({
   scoreTime,
   setScoreTime,
   audioTeam,
   setAnimate,
+  animate,
 }) => {
   return (
     <Flex
@@ -23,10 +25,13 @@ export const ScoreBtnTeam = ({
         onClick={() => {
           setScoreTime(scoreTime < 30 ? scoreTime + 1 : scoreTime);
           scoreTime !== 30 && audioTeam.play();
-          setAnimate(true);
-          setTimeout(() => {
-            setAnimate(false);
-          }, 4000);
+          if (!animate) {
+            setAnimate(true);
+
+            setTimeout(() => {
+              setAnimate(false);
+            }, 4000);
+          }
         }}
         color="#fff"
         c={"#2F2BA3"}

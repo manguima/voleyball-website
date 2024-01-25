@@ -1,6 +1,6 @@
 "use client";
 import { useScoreContext } from "@/app/page";
-import { ActionIcon, Box, Center, Image } from "@mantine/core";
+import { ActionIcon, Box, Center, Flex, Image } from "@mantine/core";
 import { IconMoodHappy } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -15,7 +15,8 @@ export const MemeComponent = () => {
           pointerEvents: "all",
           userSelect: "all",
           position: "absolute",
-          marginTop: "20%",
+          marginTop: "30%",
+          marginLeft: "1.5vw",
         }}
       >
         <ActionIcon
@@ -24,7 +25,7 @@ export const MemeComponent = () => {
             memeAudio?.play();
             setTimeout(() => {
               setMeme(false);
-            }, 700);
+            }, 3000);
           }}
           color="#fff"
           c={"#2F2BA3"}

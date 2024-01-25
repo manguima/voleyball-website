@@ -1,6 +1,6 @@
 "use client";
 
-import { Text } from "@mantine/core";
+import { Flex, Text } from "@mantine/core";
 
 export const ScoreTeam = ({
   scoreTime,
@@ -9,8 +9,9 @@ export const ScoreTeam = ({
   setAnimate,
 }) => {
   return (
+    // <Flex>
     <Text
-      c="#000"
+      c="#000000"
       style={{ pointerEvents: "all", userSelect: "all" }}
       fw={700}
       fz={"15vw"}
@@ -23,7 +24,9 @@ export const ScoreTeam = ({
         }, 4000);
       }}
     >
-      {scoreTime.toString().padStart(2, "0")}
+      {scoreTime?.toString().padStart(2, "0")}
     </Text>
+    // </Flex>
+    // null
   );
 };
