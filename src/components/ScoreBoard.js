@@ -25,7 +25,7 @@ export const ScoreBoard = () => {
     <Container
       fluid
       w={"100%"}
-      h={"100svh"}
+      h={"100dvh"}
       p={0}
       style={{
         pointerEvents: "none",

@@ -62,7 +62,7 @@ export default function Home() {
         h={"150svh"}
         style={{ contain: "paint" }}
       >
-        <Flex style={{ position: "sticky", top: 0 }} h={"100svh"}>
+        <Flex style={{ position: "sticky", top: 0 }} h={"100dvh"}>
           {!!teamWin ? <TeamWinComponent /> : <ScoreBoard />}
         </Flex>
       </Container>
