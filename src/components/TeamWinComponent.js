@@ -60,9 +60,9 @@ export const TeamWinComponent = () => {
               setScoreTimeA(0);
               setScoreTimeB(0);
             }}
+            variant="light"
             size="2.5vw"
             color="#f5f5f5"
-            c={"#ffffff"}
             fz={"2vw"}
             mt={"2vw"}
           >

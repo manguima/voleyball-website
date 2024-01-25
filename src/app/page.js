@@ -55,8 +55,16 @@ export default function Home() {
         memeAudio,
       }}
     >
-      <Container p={0} fluid w={"100%"} style={{ contain: "paint" }}>
-        <Flex>{!!teamWin ? <TeamWinComponent /> : <ScoreBoard />}</Flex>
+      <Container
+        p={0}
+        fluid
+        w={"100%"}
+        h={"150svh"}
+        style={{ contain: "paint" }}
+      >
+        <Flex style={{ position: "sticky", top: 0 }}>
+          {!!teamWin ? <TeamWinComponent /> : <ScoreBoard />}
+        </Flex>
       </Container>
     </ScoreContext.Provider>
   );
