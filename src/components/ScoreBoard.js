@@ -6,6 +6,7 @@ import { ScoreBtnTeam } from "./ScoreBtnTeam";
 import { ScoreTeam } from "./ScoreTeam";
 import { Box, Center, Image, Text, Container } from "@mantine/core";
 import { AnimatePresence, motion } from "framer-motion";
+import { useEffect } from "react";
 
 export const ScoreBoard = () => {
   const {
@@ -203,10 +204,14 @@ export const ScoreBoard = () => {
             <AnimatePresence>
               {animateA && (
                 <motion.div
+                  onLayoutAnimationComplete={() => {
+                    setAnimateA(false);
+                  }}
                   style={{ opacity: 0 }}
                   initial={{ opacity: 0, transform: "translateX(5vw)" }}
                   animate={{ opacity: 1, transform: "translateX(0)" }}
                   exit={{ opacity: 0, transform: "translateX(5vw)" }}
+                  transition={{ ease: "backInOut" }}
                 >
                   <Image w={"50vw"} src={"/images/pointA.png"} />
                 </motion.div>
@@ -227,10 +232,20 @@ export const ScoreBoard = () => {
             <AnimatePresence>
               {animateB && (
                 <motion.div
+                  onLayoutAnimationComplete={() => {
+                    setAnimateB(false);
+                  }}
                   style={{ opacity: 0 }}
                   initial={{ opacity: 0, transform: "translateX(5vw)" }}
-                  animate={{ opacity: 1, transform: "translateX(0)" }}
-                  exit={{ opacity: 0, transform: "translateX(5vw)" }}
+                  animate={{
+                    opacity: 1,
+                    transform: "translateX(0)",
+                  }}
+                  exit={{
+                    opacity: 0,
+                    transform: "translateX(5vw)",
+                  }}
+                  transition={{ ease: "backInOut" }}
                 >
                   <Image w={"40vw"} src={"/images/pointB.png"} />
                 </motion.div>
