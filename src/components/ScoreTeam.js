@@ -14,7 +14,10 @@ export const ScoreTeam = ({
       c="#000000"
       style={{ pointerEvents: "all", userSelect: "all" }}
       fw={700}
-      fz={"15vw"}
+      w={"41vw"}
+      h={"100vh"}
+      fz={"30vw"}
+      bg={"#fff"}
       onClick={() => {
         setScoreTime(scoreTime < 30 ? scoreTime + 1 : scoreTime);
         scoreTime !== 30 && audioTeam.play();

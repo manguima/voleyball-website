@@ -3,8 +3,6 @@
 import { ActionIcon, Flex } from "@mantine/core";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 import { IconCaretUpFilled } from "@tabler/icons-react";
-import { animate } from "framer-motion";
-import { useEffect } from "react";
 
 export const ScoreBtnTeam = ({
   scoreTime,
@@ -15,8 +13,10 @@ export const ScoreBtnTeam = ({
 }) => {
   return (
     <Flex
-      direction={"column"}
+      direction={"row"}
+      justify={"space-between"}
       gap={"2vh"}
+      w={"38vw"}
       style={{
         pointerEvents: "all",
         userSelect: "all",
@@ -30,19 +30,19 @@ export const ScoreBtnTeam = ({
             setAnimate(true);
           }
         }}
-        style={{ background: "#fff" }}
+        style={{ background: "#000" }}
         size={"4vw"}
       >
-        <IconCaretUpFilled size={"4vw"} style={{ color: "#2F2BA3" }} />
+        <IconCaretUpFilled size={"4vw"} style={{ color: "#fff" }} />
       </ActionIcon>
       <ActionIcon
         onClick={() => {
           setScoreTime(scoreTime > 0 ? scoreTime - 1 : scoreTime);
         }}
-        style={{ background: "#fff" }}
+        style={{ background: "#000" }}
         size={"4vw"}
       >
-        <IconCaretDownFilled size={"4vw"} style={{ color: "#2F2BA3" }} />
+        <IconCaretDownFilled size={"4vw"} style={{ color: "#fff" }} />
       </ActionIcon>
     </Flex>
   );

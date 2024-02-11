@@ -15,8 +15,7 @@ export const MemeComponent = () => {
           pointerEvents: "all",
           userSelect: "all",
           position: "absolute",
-          marginTop: "30%",
-          marginLeft: "1.5vw",
+          marginTop: "40%",
         }}
       >
         <Button

@@ -37,17 +37,17 @@ export const ScoreBoard = () => {
       }}
     >
       <Center w="100%" h="100%">
-        <Box w={"100%"}>
+        {/* <Box w={"100%"}>
           <Image src={"/images/scoreboard.png"} />
-        </Box>
+        </Box> */}
 
         {/* SCORES */}
         <Box
           justify={"center"}
           style={{
             position: "absolute",
-            marginLeft: "-43%",
-            marginTop: "15%",
+            marginLeft: "-60%",
+            marginTop: "-0%",
           }}
         >
           <Center w={"100%"} h={"100%"}>
@@ -63,8 +63,8 @@ export const ScoreBoard = () => {
           justify={"center"}
           style={{
             position: "absolute",
-            marginRight: "-46%",
-            marginTop: "15%",
+            marginRight: "-60%",
+            marginTop: "-0%",
           }}
         >
           <Center w={"100%"} h={"100%"}>
@@ -83,8 +83,8 @@ export const ScoreBoard = () => {
           justify={"center"}
           style={{
             position: "absolute",
-            marginLeft: "-43%",
-            marginTop: "-18%",
+            marginLeft: "-60%",
+            marginTop: "-30%",
           }}
         >
           <Center w={"100%"} h={"100%"}>
@@ -98,8 +98,8 @@ export const ScoreBoard = () => {
           justify={"center"}
           style={{
             position: "absolute",
-            marginRight: "-46%",
-            marginTop: "-18%",
+            marginRight: "-60%",
+            marginTop: "-30%",
           }}
         >
           <Center w={"100%"} h={"100%"}>
@@ -114,7 +114,7 @@ export const ScoreBoard = () => {
           justify={"center"}
           style={{
             position: "absolute",
-            marginTop: "-19%",
+            marginTop: "0%",
           }}
         >
           <Center w={"100%"} h={"100%"}>
@@ -128,14 +128,14 @@ export const ScoreBoard = () => {
           justify={"center"}
           style={{
             position: "absolute",
-            marginTop: "-30%",
+            marginTop: "-40%",
             pointerEvents: "all",
             userSelect: "all",
           }}
         >
           <Center w={"100%"} h={"100%"}>
             <Text
-              c="#000"
+              c="#fff"
               onClick={() => {
                 setScoreTimeA(0);
                 setScoreTimeB(0);
@@ -154,8 +154,8 @@ export const ScoreBoard = () => {
           justify={"center"}
           style={{
             position: "absolute",
-            marginTop: "10%",
-            marginLeft: "-70%",
+            marginTop: "40%",
+            marginLeft: "-60%",
           }}
         >
           <Center w={"100%"} h={"100%"}>
@@ -174,8 +174,8 @@ export const ScoreBoard = () => {
           justify={"center"}
           style={{
             position: "absolute",
-            marginTop: "10%",
-            marginRight: "-73%",
+            marginTop: "40%",
+            marginRight: "-60%",
           }}
         >
           <Center w={"100%"} h={"100%"}>
@@ -258,13 +258,12 @@ export const ScoreBoard = () => {
         </Box>
         <MemeComponent />
         <Text
-          w={"22vw"}
-          ml={"1.5vw"}
-          fz={"4vw"}
+          w={"20vw"}
+          fz={"3vw"}
           fw={900}
-          mt={"8vw"}
+          mt={"-20%"}
           ta={"center"}
-          lh={"4vw"}
+          lh={"3vw"}
           style={{ position: "absolute" }}
           c={"#fff"}
         >
